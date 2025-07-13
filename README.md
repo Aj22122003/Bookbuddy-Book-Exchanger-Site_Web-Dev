@@ -65,8 +65,8 @@ Designed and developed by Ajinkya Kutarmare
 “Read more. Spend less. Connect deeper.”
 
 📫 Contact
-📧 your.email@example.com
-🔗 LinkedIn
+📧kutarmareajinkya52@gmail.com
+🔗 LinkedIn:https://www.linkedin.com/in/ajinkya-kutarmare-107540258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
 ⭐ Support
 If you like this project, please ⭐ star this repo to support and stay updated.
