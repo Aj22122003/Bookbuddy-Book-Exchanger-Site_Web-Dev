@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fdfc;
+}
+
+header {
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav .logo {
+  font-weight: bold;
+  color: #22c55e;
+}
+
+button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e6f4ea;
+  padding: 2rem;
+}
+
+.hero-text h1 span {
+  color: #22c55e;
+}
+
+.how-it-works, .trending-books, .testimonials {
+  padding: 2rem;
+  text-align: center;
+}
+
+.books-carousel {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.book-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
