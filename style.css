@@ -1,0 +1,171 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9fb;
+  color: #2d2d2d;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1d3557;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: 500;
+}
+
+.sign-in {
+  background-color: #1dd1a1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(120deg, #c6f6ff, #e0f7fa);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero .green {
+  color: #10ac84;
+}
+
+.start-btn {
+  background-color: #10ac84;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.readers {
+  margin-top: 1rem;
+  color: #555;
+}
+
+.how-it-works {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.step {
+  width: 250px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.trending {
+  padding: 2rem 1rem;
+  background: #e8f5fe;
+  text-align: center;
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.book-card {
+  background: white;
+  padding: 1rem;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.testimonials {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #f1f2f6;
+  padding: 1rem;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+footer {
+  background-color: #1d1d1d;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-columns div ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns h4 {
+  margin-bottom: 0.5rem;
+}
+
+.credit {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
