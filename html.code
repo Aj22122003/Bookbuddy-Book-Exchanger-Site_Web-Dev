@@ -1,0 +1,122 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookBuddy - Exchange. Read. Repeat.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <h1 class="logo">📚 BookBuddy</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Browse Books</a></li>
+          <li><a href="#">My Exchanges</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><button class="sign-in">Sign In</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Exchange. Read. <span class="green">Repeat.</span></h2>
+    <p>Join thousands of book lovers and exchange your favorite reads with a community that shares your passion for stories.</p>
+    <button class="start-btn">Start Exchanging</button>
+    <p class="readers">📚 Join 5,000+ readers</p>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>📖 List Your Books</h3>
+        <p>Add books you’re willing to exchange with a photo and description.</p>
+      </div>
+      <div class="step">
+        <h3>🔄 Match & Connect</h3>
+        <p>Find readers with books you want and arrange an exchange.</p>
+      </div>
+      <div class="step">
+        <h3>🤝 Exchange & Enjoy</h3>
+        <p>Meet up, exchange books, and enjoy new stories and friends.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trending">
+    <h2>Trending Books</h2>
+    <div class="books">
+      <div class="book-card">
+        <h4>The Midnight Library</h4>
+        <p>by Matt Haig</p>
+        <p>⭐ 12 exchanges</p>
+      </div>
+      <div class="book-card">
+        <h4>Project Hail Mary</h4>
+        <p>by Andy Weir</p>
+        <p>⭐ 9 exchanges</p>
+      </div>
+      <div class="book-card">
+        <h4>Educated</h4>
+        <p>by Tara Westover</p>
+        <p>⭐ 15 exchanges</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Community Says</h2>
+    <div class="testimonial-cards">
+      <div class="card">
+        <h4>Sarah K.</h4>
+        <p><em>"BookBuddy has completely changed how I access books. I’ve saved so much money and met people who share my love for classics!"</em></p>
+      </div>
+      <div class="card">
+        <h4>Michael T.</h4>
+        <p><em>"I’ve discovered so many hidden gems through BookBuddy. The community is so friendly!"</em></p>
+      </div>
+      <div class="card">
+        <h4>Aisha J.</h4>
+        <p><em>"Our book club uses BookBuddy for monthly reads. It’s economical and sustainable!"</em></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3>BookBuddy</h3>
+      <p>Exchange. Read. Repeat.</p>
+      <div class="footer-columns">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li>Home</li>
+            <li>Browse Books</li>
+            <li>How it Works</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li>FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get the App</h4>
+          <button>App Store</button>
+          <button>Google Play</button>
+        </div>
+      </div>
+      <p class="credit">&copy; 2025 BookBuddy. Website designed and created by Ajinkya Kutarmare.</p>
+    </div>
+  </footer>
+</body>
+</html>
