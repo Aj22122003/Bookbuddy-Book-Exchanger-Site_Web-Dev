@@ -1,0 +1,62 @@
+// BookBuddyServer.java
+// A basic Java HTTP server for serving the BookBuddy website
+
+import com.sun.net.httpserver.HttpServer;
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpExchange;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.net.InetSocketAddress;
+
+public class BookBuddyServer {
+    public static void main(String[] args) throws Exception {
+        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+        server.createContext("/", new FileHandler());
+        server.setExecutor(null); // default executor
+        System.out.println("Server running at http://localhost:8000/");
+        server.start();
+    }
+
+    static class FileHandler implements HttpHandler {
+        @Override
+        public void handle(HttpExchange exchange) throws IOException {
+            String path = exchange.getRequestURI().getPath();
+            if (path.equals("/")) {
+                path = "/index.html";
+            }
+
+            File file = new File("." + path);
+            if (!file.exists()) {
+                String response = "404 (Not Found)\n";
+                exchange.sendResponseHeaders(404, response.length());
+                OutputStream os = exchange.getResponseBody();
+                os.write(response.getBytes());
+                os.close();
+            } else {
+                byte[] bytes = new byte[(int) file.length()];
+                FileInputStream fis = new FileInputStream(file);
+                fis.read(bytes);
+                fis.close();
+
+                String contentType = getContentType(path);
+                exchange.getResponseHeaders().add("Content-Type", contentType);
+                exchange.sendResponseHeaders(200, bytes.length);
+                OutputStream os = exchange.getResponseBody();
+                os.write(bytes);
+                os.close();
+            }
+        }
+
+        private String getContentType(String path) {
+            if (path.endsWith(".html")) return "text/html";
+            if (path.endsWith(".css")) return "text/css";
+            if (path.endsWith(".js")) return "application/javascript";
+            if (path.endsWith(".png")) return "image/png";
+            if (path.endsWith(".jpg") || path.endsWith(".jpeg")) return "image/jpeg";
+            return "application/octet-stream";
+        }
+    }
+}
